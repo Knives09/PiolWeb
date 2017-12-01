@@ -126,33 +126,7 @@
       <?php endif; ?>
     </div>
   </div>
-
-  <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']  || $page['footer']): ?>
-  <div id="footer-wrap" class="site-footer clr">
-    <div id="footer" class="clr">
-      <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
-        <div id="footer-block-wrap" class="clr">
-          <?php if($page['footer_first']): ?><div class="span_1_of_3 col col-1 footer-block ">
-            <?php print render ($page['footer_first']); ?>
-          </div><?php endif; ?>
-          <?php if($page['footer_second']): ?><div class="span_1_of_3 col col-2 footer-block ">
-            <?php print render ($page['footer_second']); ?>
-          </div><?php endif; ?>
-          <?php if($page['footer_third']): ?><div class="span_1_of_3 col col-3 footer-block ">
-            <?php print render ($page['footer_third']); ?>
-          </div><?php endif; ?>
-        </div>
-      <?php endif; ?>
-      
-      <?php if ($page['footer']): ?>
-        <div class="span_1_of_1 col col-1">
-          <?php print render($page['footer']); ?>
-        </div>
-      <?php endif; ?>
-    </div>
-  </div>
-  <?php endif; ?>
-  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
     <!-- Identify your business so that you can collect the payments. -->
     <input type="hidden" name="business"
@@ -174,8 +148,31 @@
     <img alt="" width="1" height="1"
     src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
 </form>
+  <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']  || $page['footer']): ?>
+  <div id="footer-wrap" class="site-footer clr">
+    <div id="footer" class="clr">
+      <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']): ?>
+        <div id="footer-block-wrap" class="clr">
+          <?php if($page['footer_first']): ?><div class="span_1_of_3 col col-1 footer-block ">
+            <?php print render ($page['footer_first']); ?>
+          </div><?php endif; ?>
+          <?php if($page['footer_second']): ?><div class="span_1_of_3 col col-2 footer-block ">
+            <?php print render ($page['footer_second']); ?>
+          </div><?php endif; ?>
+          <?php if($page['footer_third']): ?><div class="span_1_of_3 col col-3 footer-block ">
+            <?php print render ($page['footer_third']); ?>
+          </div><?php endif; ?>
+        </div>
+      <?php endif; ?>
+      <?php if ($page['footer']): ?>
+        <div class="span_1_of_1 col col-1">
+          <?php print render($page['footer']); ?>
+        </div>
+      <?php endif; ?>
+    </div>
+  </div>
+  <?php endif; ?>
+  
 
-  <footer id="copyright-wrap" class="clear">
-    <div id="copyright"><?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a>. <?php print t('Theme by'); ?>  <a href="http://www.devsaran.com" title="Devsaran" target="_blank">Devsaran</a>.</div>
-  </footer>
+ 
 </div>
