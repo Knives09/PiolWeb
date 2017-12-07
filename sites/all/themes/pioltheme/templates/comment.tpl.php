@@ -63,7 +63,7 @@
 
     <?php print $picture; ?>
 
-    <div class="submitted">
+    <div class="comment-submitted">
       <p class="commenter-name">
         <?php print $author; ?>
       </p>
