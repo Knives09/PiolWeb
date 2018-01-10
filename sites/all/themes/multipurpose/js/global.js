@@ -26,6 +26,25 @@ jQuery( function($) {
 
 	}); // End doc ready
 
+	$(document).ready(function(){
+	  $(".owl-carousel1").owlCarousel({
+	    margin:15,
+	    nav: false,
+	    dots: true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:3
+	        },
+	        1000:{
+	            items:4
+	        }
+	    }
+	  });
+	});
+
 	$(window).load(function(){
 		// Homepage FlexSlider
 

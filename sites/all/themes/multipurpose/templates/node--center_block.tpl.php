@@ -1,4 +1,4 @@
-<div style="background-image: url(<?php echo(file_create_url($node->field_slide['und'][0]['uri'])); ?>); min-height:400px;">
+<div class="center-block" style="background-image: url(<?php echo(file_create_url($node->field_slide['und'][0]['uri'])); ?>);">
   <div class="center-title">
     <h1><?php echo($node->field_slide['und'][0]['title']); ?></h1>
   </div>
