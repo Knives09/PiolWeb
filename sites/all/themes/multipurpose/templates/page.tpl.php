@@ -73,7 +73,7 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
   <div id="sidr-close"><a href="#sidr-close" class="toggle-sidr-close"></a></div>
   <div id="site-navigation-wrap">
-    <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span>Menu</a>
+    <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span></a>
     <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
       <div id="main-menu" class="menu-main-container">
         <ul>

@@ -21,6 +21,34 @@
 	a#navigation-toggle { display: block; }
 	#site-navigation #main-menu > ul { display: none; }
 }
+@media only screen and (max-width: 1024px) {
+	#homepage-slider-wrap{
+		margin-left: -73px;
+	}
+	blockquote p{ font-size: 45px;}
+	blockquote:before{height: 70px; position: absolute; top: -10px; left: 20%; width: 40%;}
+	.center-block p {
+	    width: 60%;
+	}
+	#sidr-id-main-menu ul{
+		list-style: none;
+		margin: 0px;
+	}
+	#sidr-main ul a{
+		border: none;
+		font-size: 20px;
+		padding: 14px 0;
+	}
+	a#navigation-toggle{
+		padding-left: 20px;
+	}
+	p{
+		font-size: 18px;
+	}
+	.donate-block .half2 {
+	    padding: 0px 40px;
+	}
+}
 
 /* Tablet (Portrait)
 ================================================== */
