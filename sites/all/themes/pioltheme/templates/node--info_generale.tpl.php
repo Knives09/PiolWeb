@@ -10,6 +10,9 @@
 <div class="body">
   <?php echo($node->body['und'][0]['safe_value']); ?>  
 </div>
+<div class="gallery">
+  <?php var_dump($node); ?>
+</div>
 <?php if(isset($node->webform['nid'])){
   $nid=$node->webform['nid']; ?>
 <div class="web-form">
