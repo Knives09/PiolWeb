@@ -535,6 +535,7 @@ div.vertical-tabs .vertical-tabs-panes fieldset.vertical-tabs-pane { padding: 1e
 /* Form Buttons */
 
 button,
+.button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -549,6 +550,7 @@ input[type="button"] {
 }
 
 button:hover,
+.button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
@@ -923,7 +925,65 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 #forum .name a{ 
   font-size: 16px;
 }
-
+.owl-visoreinterno{
+  margin: 0px;
+  width: 100vw !important;
+  margin-left: -385px;
+}
+.owl-visoreinterno .item{
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+}
+.owl-visoreinterno .item:after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00000000',GradientType=1 );
+}
+.owl-visoreinterno .item .texts{
+  width: 20%;
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  z-index: 998;
+}
+.owl-visoreinterno .owl-dots{
+  position: absolute;
+  left: 73px;
+  bottom: 40px;
+}
+.owl-visoreinterno .item .texts h2{
+  color: #fff;
+  font-size: 35px !important;
+}
+.owl-visoreinterno .item .texts p{
+  color: #fff;
+}
+.lista-contenitore{
+  margin-bottom: 80px;
+}
+.lista-contenitore .col-md-4 img{
+  width: 100%;
+}
+.lista-contenitore .col-md-4 .img-cont{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.lista-contenitore .col-md-4 .paragraph{
+  overflow: hidden;
+  height: 145px;
+  margin-bottom: 25px;
+}
 /* Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  * License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 ================================================== */

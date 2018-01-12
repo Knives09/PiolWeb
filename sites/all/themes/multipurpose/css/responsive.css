@@ -22,8 +22,11 @@
 	#site-navigation #main-menu > ul { display: none; }
 }
 @media only screen and (max-width: 1024px) {
-	#homepage-slider-wrap{
+	#homepage-slider-wrap, .owl-visoreinterno{
 		margin-left: -73px;
+	}
+	.owl-visoreinterno .item{
+		height: 450px;
 	}
 	blockquote p{ font-size: 45px;}
 	blockquote:before{height: 70px; position: absolute; top: -10px; left: 20%; width: 40%;}
@@ -47,6 +50,9 @@
 	}
 	.donate-block .half2 {
 	    padding: 0px 40px;
+	}
+	.owl-visoreinterno .item .texts{
+		width: 40%;
 	}
 }
 

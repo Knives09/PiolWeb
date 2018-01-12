@@ -43,6 +43,12 @@ jQuery( function($) {
 	        }
 	    }
 	  });
+	  $(".owl-visoreinterno").owlCarousel({
+	  	items:1,
+	    nav: false,
+	    loop: true,
+	    dots: true
+	  });
 	});
 
 	$(window).load(function(){
