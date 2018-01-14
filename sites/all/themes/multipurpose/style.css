@@ -193,7 +193,7 @@ a { outline: 0 }
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 999; }
+    z-index: 99; }
 #site-navigation #main-menu > ul li { display: block; float: left; height: 55px; line-height: 55px; }
 #site-navigation #main-menu > ul a { color: #999; font-weight: 400; text-decoration: none; text-align: left; cursor: pointer; padding: 0 20px; }
 #site-navigation #main-menu > ul > li > a:hover,
@@ -256,7 +256,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-nav a.flex-active { background: #3e3e4b; color: #fff; text-decoration: none; }
 /* Homepage
 ================================================== */
-#homepage-slider-wrap { margin: 0px; width: 100vw; margin-left: -385px;}
+#homepage-slider-wrap { margin: 0px; width: 110vw; margin-left:calc(( 110vw - 1155px )/-2);}
 
 
 #breadcrumbs {
@@ -921,14 +921,25 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   width: 35px;
   height: 35px;
 }
-
+#site-navigation-wrap{
+  padding: 10px;
+      height: auto;
+}
+#site-navigation-wrap h1{
+  margin:0px 15px;
+  position: absolute;
+  left: 15px;
+}
+#site-navigation-wrap h1 img{
+  height: 50px;
+}
 #forum .name a{ 
   font-size: 16px;
 }
 .owl-visoreinterno{
   margin: 0px;
   width: 100vw !important;
-  margin-left: -385px;
+  margin-left:calc(( 100vw - 1155px )/-2);
 }
 .owl-visoreinterno .item{
   height: 600px;
@@ -983,6 +994,55 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   overflow: hidden;
   height: 145px;
   margin-bottom: 25px;
+}
+.project .title{
+  font-family: "Georgia";
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.project .title h2{
+  font-size: 35px !important;
+}
+.project .summary h3{
+  font-weight: 400;
+}
+.project .summary{
+  margin-bottom: 40px;
+}
+.project .summary h3 p{
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0px;
+}
+.Title h2{
+  font-size: 40px !important;
+  font-weight: 400;
+  font-family: "Georgia";
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.summary p{
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+}
+.clr .flex2 img{
+  width: 100% !important;
+  height: auto !important;
+  max-height: 10000px !important;
+}
+.clr .flex2 #homepage-slider{
+  max-height: 10000px !important;
+}
+#user-login{
+  margin-top: 150px;
+}
+.owl-carpage{
+  margin: 40px 0px;
+}
+.owl-carpage img{
+  width: 100%;
 }
 /* Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  * License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

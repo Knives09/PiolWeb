@@ -49,6 +49,12 @@ jQuery( function($) {
 	    loop: true,
 	    dots: true
 	  });
+	  $(".owl-carpage").owlCarousel({
+	  	items:1,
+	    nav: false,
+	    loop: true,
+	    dots: true
+	  });
 	});
 
 	$(window).load(function(){

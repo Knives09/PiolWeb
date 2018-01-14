@@ -73,6 +73,7 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
   <div id="sidr-close"><a href="#sidr-close" class="toggle-sidr-close"></a></div>
   <div id="site-navigation-wrap">
+    <h1><img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b8/Levi%27s_logo.png" alt=""></h1>
     <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span></a>
     <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
       <div id="main-menu" class="menu-main-container">
@@ -177,6 +178,15 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 </div>
 <div id="footer-wrap" class="site-footer clr">
   <footer id="footer" class="clr">
-    
+    <ul>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>The center</li>
+      <li>Projects</li>
+      <li>Partner</li>
+      <li>News</li>
+      <li>Donate</li>
+      <li>Contact Us</li>
+    </ul>
   </footer>
 </div>

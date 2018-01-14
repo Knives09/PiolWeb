@@ -11,11 +11,14 @@
   <?php echo($node->body['und'][0]['safe_value']); ?>  
 </div>
 <div class="gallery">
+  <div class="owl-carousel owl-theme owl-carpage"></div>
   <?php 
   foreach ($node->field_gallery['und'] as $key ) {
     $link=file_create_url($key['uri']);
     ?>
-    <img src="<?php echo($link); ?>">
+    <div class="item">
+      <img src="<?php echo($link); ?>">
+    </div>
   <?php
 } 
   ?>

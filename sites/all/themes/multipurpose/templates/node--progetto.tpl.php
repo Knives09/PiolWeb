@@ -9,7 +9,7 @@
     <div class="summary">
       <h3><?php echo($node->body['und'][0]['safe_summary']); ?></h3>
     </div>
-  <div class="clr flexslider-container">
+  <div class="clr flexslider-container flex2">
     <div id="homepage-slider" class="flexslider">
       <ul class="slides clr">
         <?php foreach ($node->field_slide['und'] as $key) { ?>

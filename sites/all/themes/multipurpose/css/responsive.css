@@ -21,9 +21,12 @@
 	a#navigation-toggle { display: block; }
 	#site-navigation #main-menu > ul { display: none; }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1199px) {
 	#homepage-slider-wrap, .owl-visoreinterno{
-		margin-left: -73px;
+		margin-left: calc(( 110vw - 950px )/-2);
+	}
+	.owl-visoreinterno{
+		margin-left: calc(( 100vw - 950px )/-2);
 	}
 	.owl-visoreinterno .item{
 		height: 450px;
@@ -55,6 +58,23 @@
 		width: 40%;
 	}
 }
+@media only screen and (max-width: 991px) {
+	#homepage-slider-wrap{
+		width: 120vw;
+		margin-left: calc(( 120vw - 640px )/-2);
+	}
+	.owl-visoreinterno{
+		margin-left: calc(( 110vw - 640px )/-2);
+    	width: 110% !important;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#site-navigation-wrap h1{
+		margin: 0;
+	  position: absolute;
+	  left: 43%;
+	}
+}
 
 /* Tablet (Portrait)
 ================================================== */
@@ -83,6 +103,63 @@
 	.col{ width: 100%; margin-left: 0; margin-bottom: 25px; }
 	#wrap { margin-top: 0; margin-bottom: 0; }
 	#header-social { clear: both; position: inherit; top: auto; right: auto; margin-top: 20px; }
+
+	.owl-visoreinterno{
+		margin-left: -15px;
+	}
+	#homepage-slider-wrap{
+		margin-left: -15px;
+		width: 100vw;
+	}
+	blockquote p {
+	    font-size: 25px;
+	}
+	blockquote:before{
+	    height: 35px;
+	    top: 5px;
+	}
+	.page-node #content-wrap img {
+	    height: 300px;
+	    width: auto;
+	    margin: 0px;
+	    max-width: 2000px;
+	}
+	.center-block p {
+	    width: 100%;
+	}
+	.center-block {
+	    padding: 30px;
+	}
+	.owl-carousel .owl-item img {
+	    height: auto !important;
+	    width: 100% !important;
+	}
+	.donate-block .half {
+	    width: 100%;
+	    float: left;
+	}
+	.donate-block .half2 {
+	    padding: 0px 10px;
+	}
+	.owl-visoreinterno .item .texts {
+	    width: 80%;
+	    left: 30px;
+	}
+	.lista-contenitore .col-md-4 .paragraph {
+	    overflow: hidden;
+	    height: 145px;
+	}
+	.visore img{
+		 width: 100% !important;
+    	height: auto !important;
+	}
+	@media only screen and (max-width: 1024px) {
+		#site-navigation-wrap h1{
+			margin: 0;
+		  position: absolute;
+		  left: 38%;
+		}
+	}
 }
 /* Mobile (Landscape)
 ================================================== */
