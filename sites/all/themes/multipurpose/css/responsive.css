@@ -153,6 +153,26 @@
 		 width: 100% !important;
     	height: auto !important;
 	}
+	footer .third{
+		width: 100%;
+	}
+	footer .social ul{
+		float: left;
+		margin-left: -5px;
+		margin-top: 15px;
+	}
+	footer .logo-footer{
+		margin-top: 15px;
+	}
+	footer .links-footer ul {
+		float: left;
+		margin-left:0px;
+	}
+	footer .links-footer ul li{
+		text-align: left;
+		float: left;
+		margin-right: 10px;
+	}
 	@media only screen and (max-width: 1024px) {
 		#site-navigation-wrap h1{
 			margin: 0;

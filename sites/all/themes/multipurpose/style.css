@@ -390,6 +390,71 @@ h1.page-title {
 .textright { text-align: right }
 .textleft { text-align: left }
 
+footer .third{
+  width: 33%;
+  float: left;
+  color: #aaa;
+  font-family: 'Open Sans';
+}
+footer .sections-footer{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+footer .sections-footer li{
+  padding: 5px 0px;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+footer .logo-footer img{
+  height: 50px;
+  margin-bottom: 20px;
+}
+footer .contact-info p{
+  font-size: 14px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+footer .links-footer ul{
+  list-style: none;
+  display: block;
+  float: right;
+}
+footer .links-footer ul li{
+  padding: 5px 0px;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: right;
+}
+footer .social ul{
+  list-style: none;
+  display: block;
+  float: right;
+}
+footer .social ul li{
+  display: block;
+  float: left;
+  margin-left: 5px;
+}
+footer .social ul li a{
+  border: 1px solid #990033;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+footer a{
+  transition: all 0.3s ease-in-out;
+}
+footer a:hover{
+  color: #fff !important;
+}
+footer .social ul li a:hover{
+  background-color: #990033;
+}
+footer .social ul li img{
+  width: 20px;
+}
 /* -------------- Form Elements  ------------- */
 
 fieldset { background: #ffffff; border: 1px solid #cccccc; margin-top: 10px; margin-bottom: 32px;

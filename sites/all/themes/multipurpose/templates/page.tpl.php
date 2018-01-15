@@ -177,16 +177,57 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 </form>
 </div>
 <div id="footer-wrap" class="site-footer clr">
-  <footer id="footer" class="clr">
-    <ul>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>The center</li>
-      <li>Projects</li>
-      <li>Partner</li>
-      <li>News</li>
-      <li>Donate</li>
-      <li>Contact Us</li>
+  <footer id="footer" class="clr container">
+    <ul class="third sections-footer">
+      <li><a href="" title="">Home</a></li>
+      <li><a href="" title="">About Us</a></li>
+      <li><a href="" title="">The center</a></li>
+      <li><a href="" title="">Projects</a></li>
+      <li><a href="" title="">Partner</a></li>
+      <li><a href="" title="">News</a></li>
+      <li><a href="" title="">Donate</a></li>
+      <li><a href="" title="">Contact Us</a></li>
     </ul>
+    <div class="third">
+      <div class="logo-footer">
+        <img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b8/Levi%27s_logo.png" alt="">
+      </div>
+      <div class="contact-info">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non venenatis nisi. Integer eget turpis vel leo ultricies eleifend in non tellus. Duis purus diam, accumsan in tincidunt ut, dictum vitae metus.
+        </p>
+      </div>
+      <div class="contact-info">
+        <p>
+          Via Lorem ipsum dolor sit amet, 22, P.iva 3246324634
+        </p>
+      </div>
+    </div>
+    <div class="third">
+      <div class="social">
+        <ul>
+          <li>
+            <a href="" title="">
+              <img src="<?php echo(drupal_get_path('theme', 'multipurpose')); ?>/images/facebook-logo.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="" title="">
+              <img src="<?php echo(drupal_get_path('theme', 'multipurpose')); ?>/images/youtube.png" alt="">
+            </a>
+          </li>
+          <br class="clear"></br>
+        </ul>
+      </div>
+      <br class="clear"></br>
+      <div class="links-footer">
+        <ul>
+          <li><a href="" title="">Donate</a></li>
+          <li><a href="" title="">Privacy</a></li>
+          <li><a href="" title="">Policy</a></li>
+          <li><a href="" title="">Copyright</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </div>
