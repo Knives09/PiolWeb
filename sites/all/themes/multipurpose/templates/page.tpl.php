@@ -66,6 +66,9 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
  * @see template_preprocess_page()
  * @see template_process()
  */
+$block = module_invoke('locale', 'block_view', 'language');
+
+
 ?>
 <div id="wrap" class="clr container">
   <div id="header-wrap" class="clr fixed-header">
@@ -77,6 +80,7 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
     <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span></a>
     <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
       <div id="main-menu" class="menu-main-container">
+       <?php print $block['content']; ?>     
         <ul>
         <?php 
           $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
@@ -93,7 +97,7 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
                 }
               echo('<li '.$style.' class="menu-item"><a '.$styleA.' href="'.$key['#href'].'">'.$key['#title'].'</a></li>');
             }      
-          }        
+          }   
         ?>
         </ul>
       </div>
@@ -178,16 +182,25 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 </div>
 <div id="footer-wrap" class="site-footer clr">
   <footer id="footer" class="clr container">
-    <ul class="third sections-footer">
-      <li><a href="" title="">Home</a></li>
-      <li><a href="" title="">About Us</a></li>
-      <li><a href="" title="">The center</a></li>
-      <li><a href="" title="">Projects</a></li>
-      <li><a href="" title="">Partner</a></li>
-      <li><a href="" title="">News</a></li>
-      <li><a href="" title="">Donate</a></li>
-      <li><a href="" title="">Contact Us</a></li>
-    </ul>
+   <ul class="third sections-footer">
+        <?php 
+          $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+          foreach ($main_menu_tree as $key) {
+            //var_dump($key);
+            if(isset($key['#title'])){
+              if($key['#href']==$actual_link){
+                $style='style="background: #02aace;"';
+                $styleA='style=" color:#fff;"';
+              }
+                else{
+                  $style="";
+                  $styleA="";
+                }
+              echo('<li '.$style.' class="menu-item"><a '.$styleA.' href="'.$key['#href'].'">'.$key['#title'].'</a></li>');
+            }      
+          }   
+        ?>
+        </ul>
     <div class="third">
       <div class="logo-footer">
         <img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b8/Levi%27s_logo.png" alt="">
@@ -222,10 +235,23 @@ $actual_link = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
       <br class="clear"></br>
       <div class="links-footer">
         <ul>
-          <li><a href="" title="">Donate</a></li>
-          <li><a href="" title="">Privacy</a></li>
-          <li><a href="" title="">Policy</a></li>
-          <li><a href="" title="">Copyright</a></li>
+        <?php 
+          $footer_menu = menu_tree(variable_get('menu_main_links_source', 'menu-menu-footer'));
+          foreach ($footer_menu as $key) {
+            //var_dump($key);
+            if(isset($key['#title'])){
+              if($key['#href']==$actual_link){
+                $style='style="background: #02aace;"';
+                $styleA='style=" color:#fff;"';
+              }
+                else{
+                  $style="";
+                  $styleA="";
+                }
+              echo('<li '.$style.' class="menu-item"><a '.$styleA.' href="'.$key['#href'].'">'.$key['#title'].'</a></li>');
+            }      
+          }   
+        ?>
         </ul>
       </div>
     </div>
