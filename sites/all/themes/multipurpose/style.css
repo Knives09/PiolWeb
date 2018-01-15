@@ -724,6 +724,16 @@ ol.search-results { padding-left: 0; }
   color: #100101;
 }
 
+.sidr-class-language-switcher-locale-url li{
+  float: left;
+  margin-right: 10px;
+}
+.sidr-class-active a {
+  color: #fff !important;
+}
+#sidr-id-main-menu ul{
+  clear: both;
+}
 
 /*-------------------------------------------*
 /* Fix CKEditor style
