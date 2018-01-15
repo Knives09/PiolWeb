@@ -1063,10 +1063,21 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 .project .title{
   font-family: "Georgia";
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.project .title:before{
+  content: "";
+  position: absolute;
+  left: -20px;
+  height: calc(100% + 20px);
+  width: 100px;
+  top: -10px;
+  background-color: #990033;
+  opacity: 0.4;
 }
 .project .title h2{
-  font-size: 35px !important;
+  font-size: 40px !important;
 }
 .project .summary h3{
   font-weight: 400;
@@ -1078,6 +1089,21 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   font-weight: 400;
   font-size: 22px;
   letter-spacing: 0px;
+}
+.Title{
+  position: relative;
+  margin-bottom: 30px;
+}
+.Title:before{
+  position: relative;
+  content: "";
+  position: absolute;
+  left: -20px;
+  height: calc(100% + 20px);
+  width: 100px;
+  top: -10px;
+  background-color: #990033;
+  opacity: 0.4;
 }
 .Title h2{
   font-size: 40px !important;
