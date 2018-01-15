@@ -65,7 +65,7 @@
 	}
 	.owl-visoreinterno{
 		margin-left: calc(( 110vw - 640px )/-2);
-    	width: 110% !important;
+    	width: 110vw !important;
 	}
 }
 @media only screen and (max-width: 1024px) {
