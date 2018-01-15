@@ -428,6 +428,29 @@ footer .links-footer ul li{
   text-transform: uppercase;
   text-align: right;
 }
+.visore{
+  position: relative;
+}
+.fixed-socials{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.fixed-socials a{
+  background-color: #222;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin-bottom: 0px;
+  float: left;
+  margin-right: 2px;
+}
+.fixed-socials a:hover{
+  background-color: #990033;
+}
+.fixed-socials img{
+  width: 20px !important;
+}
 footer .social ul{
   list-style: none;
   display: block;
