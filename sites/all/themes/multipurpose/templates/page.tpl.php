@@ -76,7 +76,7 @@ $block = module_invoke('locale', 'block_view', 'language');
 
   <div id="sidr-close"><a href="#sidr-close" class="toggle-sidr-close"></a></div>
   <div id="site-navigation-wrap">
-    <h1><img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b8/Levi%27s_logo.png" alt=""></h1>
+    <h1><img src="https://vignette.wikia.nocookie.net/uncyclopedia/images/4/4c/Striped_apple_logo.png/revision/latest?cb=20090104011038" alt=""></h1>
     <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span></a>
     <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
       <div id="main-menu" class="menu-main-container">
@@ -169,7 +169,7 @@ $block = module_invoke('locale', 'block_view', 'language');
     <!-- Display the payment button. -->
     <div class="donate-block">
       <div class="half">
-        <img src="<?php echo(drupal_get_path('theme', 'multipurpose')); ?>/images/paypal-784404_960_720.png" alt="">
+        <img src="<?php echo($base_url); ?>/sites/all/themes/multipurpose/images/paypal-784404_960_720.png" alt="">
       </div>
       <div class="half half2">
         <h1>Dona ora</h1>
@@ -203,7 +203,7 @@ $block = module_invoke('locale', 'block_view', 'language');
         </ul>
     <div class="third">
       <div class="logo-footer">
-        <img src="https://vignette.wikia.nocookie.net/logopedia/images/b/b8/Levi%27s_logo.png" alt="">
+        <img src="https://vignette.wikia.nocookie.net/uncyclopedia/images/4/4c/Striped_apple_logo.png" alt="">
       </div>
       <div class="contact-info">
         <p>
@@ -221,12 +221,12 @@ $block = module_invoke('locale', 'block_view', 'language');
         <ul>
           <li>
             <a href="" title="">
-              <img src="<?php echo(drupal_get_path('theme', 'multipurpose')); ?>/images/facebook-logo.png" alt="">
+              <img src="<?php echo($base_url); ?>/sites/all/themes/multipurpose/images/facebook-logo.png" alt="">
             </a>
           </li>
           <li>
             <a href="" title="">
-              <img src="<?php echo(drupal_get_path('theme', 'multipurpose')); ?>/images/youtube.png" alt="">
+              <img src="<?php echo($base_url); ?>/sites/all/themes/multipurpose/images/youtube.png" alt="">
             </a>
           </li>
           <br class="clear"></br>

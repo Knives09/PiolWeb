@@ -6,7 +6,6 @@ stylesheets[all][] = style.css
 stylesheets[all][] = css/responsive.css
 scripts[] = js/retina.js
 scripts[] = js/plugins.js
-scripts[] = js/global.js
 regions[sidebar_first]  = First Sidebar
 regions[header]         = Header
 regions[preface_first]  = Preface First
