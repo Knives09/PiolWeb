@@ -80,7 +80,7 @@ $block = module_invoke('locale', 'block_view', 'language');
     <a href="#sidr-main" id="navigation-toggle"><span class="fa fa-bars"></span></a>
     <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
       <div id="main-menu" class="menu-main-container">
-       <?php print $block['content']; ?> 
+       <?php print $block['content']; ?>
         <ul>
         <?php 
           $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
@@ -97,7 +97,7 @@ $block = module_invoke('locale', 'block_view', 'language');
                 }
               echo('<li '.$style.' class="menu-item"><a '.$styleA.' href="'.$key['#href'].'">'.$key['#title'].'</a></li>');
             }      
-          }  
+          }
         ?>
         </ul>
       </div>
